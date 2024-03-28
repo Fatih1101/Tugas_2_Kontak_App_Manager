@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        header {
+            position: fixed;
+            background: #22242A;
+            padding: 20px;
+            width: 100%;
+            height: 30px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        tbody {
+            font-size: 17px;
+            font-weight: 300;
+            color: #040404;
+        }
+        th{
+            color: #fff;
+        }
+
+        .tabelku {
+            width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .tabelb {
+            width: auto;
+            margin: auto;
+        }
+
+        .left_area span {
+            color: #d35110;
+        }
+
+        .left_area h3 {
+            color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .right_area {
+            padding: 5px;
+            float: right;
+            margin-top: -30px;
+            margin-right: 70px;
+        }
+        .right_area span, i{
+            color: #ffff;
+            font-weight: 700;
+        }
+        .right_area span:hover{
+            color: #d35110;
+        }
+        
+        .right_area i:hover{
+            color: #d35110;
+        }
+        
+        .sidebar {
+            background: #7a839a;
+            margin-top: 70px;
+            padding-top: 30px;
+            position: fixed;
+            left: 0;
+            width: 250px;
+            height: 100%;
+        }
+
+        .sidebar h4 {
+            color: #ccc;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 40px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+        }
+
+        .sidebar a:hover {
+            background: #6b5670;
+        }
+
+        .sidebar i {
+            padding-right: 10px;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding-top: 70px;
+            background-position: center;
+            background-size: cover;
+            height: 125vh;
+        }
+
+        .box {
+            width: 740px;
+            margin: 0 auto;
+            margin-top: 30px;
+            box-shadow: 0 0.30rem 0.75rem rgba(5, 5, 5, 5);
+            transition: all .3s;
+            border-top-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+        }
+
+        .box:hover {
+            background-color: #1f8a45;
+            border: solid 5px #4fd47e;
+            border-top-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #22242A;
+            color: #e8e8e8;
+            text-align: center;
+        }
+        .btn .fa-trash {
+        color: rgb(6, 6, 6); /* Merubah warna icon "trash" menjadi merah saat di-hover */
+        }
+
+        .btn .fa-pen {
+            color: rgb(0, 0, 0); /* Merubah warna icon "pen" menjadi orange saat di-hover */
+        }
+        .btn .fa-eye {
+            color: rgb(1, 88, 142); /* Merubah warna icon "pen" menjadi orange saat di-hover */
+        }
+        .btn:hover .fa-trash {
+        color: red; /* Merubah warna icon "trash" menjadi merah saat di-hover */
+        }
+
+        .btn:hover .fa-pen {
+            color: orange; /* Merubah warna icon "pen" menjadi orange saat di-hover */
+        }
+        .btn:hover .fa-eye {
+            color: rgb(0, 157, 255); /* Merubah warna icon "pen" menjadi orange saat di-hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3>Endra <span> Fatih</span></h3>
+        </div>
+        <div class="right_area">
+            <a href="index.html">
+                <!-- <img border="0" alt="W3Schools" src="logout.png" width="35px" height="40px"> -->
+                <i class='fas fa-file-export' style='font-size:20px'><span> Logout</span></i>
+            </a>
+        </div>
+    </header>
+    <div class="sidebar">
+
+        <a href="#"><i class="fas fa-address-book"></i><span>Kontak HP</span></a>
+    </div>
+
+    <div class="content">
+
+        <table class="tabelku" style="margin-top: 30px;" border="1" cellspacing="1" cellpadding="5">
+            <tr>
+                <th style="background-color: #22242A;" rowspan="2">ID</th>
+            </tr>
+            <tr>
+                <th style="background-color: #2f323a;">No Hp</th>
+                <th style="background-color: #2f323a;">Owner</th>
+                <th style="background-color: #2f323a;">Aksi</th>
+            </tr>
+            <tr>
+                <th style="background-color: #22242A;">1</th>
+                <td style="background-color: #ffffff;">081234567890</td>
+                <td style="background-color: #ffffff;">Endra</td>
+                <td style="background-color: #ffffff;">
+                    <button class="btn"><i class="fa fa-eye"></i></button>
+                </button><button class="btn"><i class="fa fa-pen"></i></button>
+                <button class="btn"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: #22242A;">2</th>
+                <td style="background-color: #ffffff;">087654321098</td>
+                <td style="background-color: #ffffff;">Fatih</td>
+                <td style="background-color: #ffffff;">
+                    <button class="btn"><i class="fa fa-eye"></i></button>
+                    <button class="btn"><i class="fa fa-pen"></i></button>
+                    <button class="btn"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: #22242A;">3</th>
+                <td style="background-color: #ffffff;">085678901234</td>
+                <td style="background-color: #ffffff;">Aku</td>
+                <td style="background-color: #ffffff;">
+                    <button class="btn"><i class="fa fa-eye"></i></button>
+                    <button class="btn"><i class="fa fa-pen"></i></button>
+                    <button class="btn"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div class="footer">
+        <h5> ©Copyright 2024 Endra Fatih </h5>
+    </div>
+</body>
+
+</html>
